@@ -27,8 +27,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/ATUT:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest .
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/ATUT:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
